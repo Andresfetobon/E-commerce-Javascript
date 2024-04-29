@@ -29,14 +29,15 @@ textarea,
 ul {
   margin: 0;
   padding: 0;
+  text-decoration: none !important;
 }
 
 ul {
-  list-style-type: none;
+  list-style-type: none !important;
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 button {
@@ -85,6 +86,8 @@ aside {
   font-size: 0, 85rem;
   border-radius: 20px 0px 0px 20px;
   position: relative;
+  width: 100%;
+
 }
 
 .boton-menu.active::before {
@@ -97,6 +100,7 @@ aside {
   background-color: transparent;
   border-bottom-right-radius: 0.5rem;
   box-shadow: 0 1rem 0 var(--clr-white);
+
 }
 
 .boton-menu.active::after {
@@ -109,6 +113,7 @@ aside {
   background-color: transparent;
   border-top-right-radius: .5rem;
   box-shadow: 0 -1rem 0 var(--clr-white);
+
 }
 
 .boton-menu.active {
@@ -123,6 +128,13 @@ aside {
 
 .boton-carrito {
   margin-top: 2rem;
+}
+
+.number{
+  background-color: var(--clr-white);
+  color: var(--clr-main);
+  padding: .15rem .25rem;
+  border-radius: .25rem;
 }
 
 .text-footer {
@@ -198,9 +210,10 @@ main {
   gap: 1.5rem;
 }
 
-.carrito-vacio {
+.carrito-vacio,
+.carrito-comprado {
   color: var(--clr-main);
-  display: none;
+  /* display: none; */
 }
 
 .carrito-productos {
@@ -238,3 +251,47 @@ main {
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
 }
 
+.carrito-acciones {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carrito-acciones-vaciar {
+  border: 0;
+  background-color: var(--clr-gray);
+  padding: 1rem;
+  border-radius: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  cursor: pointer;
+  
+}
+
+.acciones-carrito-dere{
+  display: flex;
+
+}
+
+.acciones-total{
+  display: flex;
+  background-color: var(--clr-gray);
+  padding: 1rem;
+  color: var(--clr-main);
+  text-transform: uppercase;
+  border-radius: 10px 0px 0px 10px;
+  gap: 1rem;
+}
+
+.carrito-acciones-comprar {
+  border: 0;
+  background-color: var(--clr-main);
+  padding: 1rem;
+  color: var(--clr-white);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 00px 10px 10px 00px;
+}
+
+.disabled {
+  display: none;
+}

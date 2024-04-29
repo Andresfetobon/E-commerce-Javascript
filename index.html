@@ -21,25 +21,26 @@
       <!-- Sidebar -->
       <aside>
         <header><h1 class="Logo">E-commerce</h1></header>
+
         <nav>
           <ul class="menu">
             <li>
-              <button class="boton-menu boton-categoria active">
+              <button id="todos" class="boton-menu boton-categoria active">
                 <i class="bi bi-hand-index-thumb-fill"></i>Todos los Productos
               </button>
             </li>
             <li>
-              <button class="boton-menu boton-categoria">
+              <button id="abrigos" class="boton-menu boton-categoria">
                 <i class="bi bi-hand-index-thumb"></i>Abrigos
               </button>
             </li>
             <li>
-              <button class="boton-menu boton-categoria">
+              <button id="camisetas" class="boton-menu boton-categoria">
                 <i class="bi bi-hand-index-thumb"></i>Camisetas
               </button>
             </li>
             <li>
-              <button class="boton-menu boton-categoria">
+              <button id="pantalones" class="boton-menu boton-categoria">
                 <i class="bi bi-hand-index-thumb"></i>Pantalones
               </button>
             </li>
@@ -51,6 +52,7 @@
             </li>
           </ul>
         </nav>
+        
         <footer>
           <p class="text-footer">© 2024 E-Commerce Js</p>
         </footer>
@@ -58,84 +60,11 @@
       <!-- Content -->
       <main>
         <h2 class="titulo-principal">Todos los Productos</h2>
-        <div class="contenedor-productos">
 
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/01.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 01</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/02.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 02</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/03.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 03</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/04.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 04</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/01.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 01</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/02.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 02</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/03.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 03</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
-          <div class="producto">
-            <img class="producto-imagen" src="/img/abrigos/04.jpg" alt="abrigos" />
-            <div class="producto-detalles">
-              <h3 class="producto-titulo">abrigo 04</h3>
-              <p class="producto-precio">$1000</p>
-              <button class="producto-agregar">Agregar</button>
-            </div>
-          </div>
-
+        <div id="contenedor-productos" class="contenedor-productos">
+          <!-- esto se completo con js -->
         </div>
-  
       </main>
-
     </div>
     <script src="/js/main.js"></script>
   </body>
